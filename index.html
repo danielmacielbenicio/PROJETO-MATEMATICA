@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Lucro Máximo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Calculadora de Lucro Máximo</h1>
+        <p>Calcule o preço de venda ideal para maximizar seu lucro.</p>
+        
+        <div class="form-group">
+            <label for="quantidade">Quantidade de objetos a ser vendida:</label>
+            <input type="number" id="quantidade" placeholder="Ex: 50">
+        </div>
+
+        <div class="form-group">
+            <label for="produto">Escolha o produto:</label>
+            <select id="produto">
+                <option value="pelucia">Pelúcia (Custo: R$18)</option>
+                <option value="croche">Crochê (Custo: R$32)</option>
+            </select>
+        </div>
+
+        <button onclick="calcularLucroMaximo()">Calcular</button>
+
+        <div class="resultado">
+            <h3>Resultados:</h3>
+            <p>Preço de venda para obter lucro máximo: <strong id="precoOtimo">R$ 0.00</strong></p>
+            <p>O lucro máximo obtido será de: <strong id="lucroMaximo">R$ 0.00</strong></p>
+        </div>
+    </div>
+
+    <script src="calculadora.js"></script>
+
+</body>
+</html>
